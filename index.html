@@ -1,0 +1,120 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid system CSS</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h1 class="header__title">Grid System CSS</h1>
+                        <p class="header__title header__title--small">12 columns</p>
+                    </div>
+                </div>
+            </header>
+            <!-- Main -->
+            <main class="main">
+                <section class="section">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <h3 class="heading">What is Grid CSS</h3>
+                            <p class="paragraph">This CSS file is built upon Bootstrap 5's Grid System.</p>
+                            <p class="paragraph">
+                                Grid System CSS is a powerful layout system that allows you to create
+                                responsive designs with ease. It provides a flexible grid of columns and rows
+                                that can be easily customized to fit your needs. With the Grid System CSS, you
+                                can create complex layouts by combining different column classes and adding
+                                offsets to create spacing between columns. It is a great tool for building
+                                modern and responsive websites.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <h3 class="heading">How to use</h3>
+                            <p class="paragraph">
+                                To use Grid CSS, you need to include the CSS file in your HTML file. Then, you
+                                can use the grid system by adding the class name to the HTML element.
+                            </p>
+                            <p class="paragraph">
+                                For example, if you want to create a <b>3-column layout</b>, you can use the
+                                class name <code>.col-4</code> for each column.
+                            </p>
+                            <p class="paragraph">
+                                You can also use the class name <code>.offset-*</code> to add space between
+                                columns.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta">
+                    <div class="row text-center g-5">
+                        <div class="col">
+                            <button type="button" class="cta__item download_file">Download</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="cta__item copy_original">Original File</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="cta__item copy_minified">Minified File</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- scroll-top -->
+                <button id="scroll-top" class="scroll-top">Top</button>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="social row g-3 g-md-6 text-center">
+                    <a
+                        href="https://github.com/777hanh777hanh"
+                        rel="noreferrer"
+                        class="social__link"
+                        target="_blank"
+                        >Github</a
+                    >
+                    <a
+                        href="https://www.facebook.com/777hanh"
+                        rel="noreferrer"
+                        class="social__link"
+                        target="_blank"
+                        >Facebook</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/thien-thanh-tran-187699227/"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="social__link"
+                        >LinkedIn</a
+                    >
+                    <a
+                        href="https://github.com/777hanh777hanh/grid-css/"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="social__link"
+                        >Source code</a
+                    >
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <p class="footer__copyright paragraph paragraph--small">© 777hanh777hanh</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- script -->
+        <script src="./assets/js/main.js" defer></script>
+    </body>
+</html>
