@@ -1,4 +1,4 @@
-# Grid S CSS
+# Grid System CSS
 
 ## Link: [777hanh777hanh.github.io/grid-css](https://777hanh777hanh.github.io/grid-css/)
 
