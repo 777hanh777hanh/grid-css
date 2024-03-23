@@ -28,6 +28,7 @@ $gutters: (
     5: 1.5,
     6: 3,
 ) !default;
+$display-value: flex, grid, block, inline-block, inline, none;
 %gutter-padding {
     padding-left: calc(var(--grid-gutter-x) * 0.5);
     padding-right: calc(var(--grid-gutter-x) * 0.5);
@@ -125,6 +126,14 @@ $gutters: (
     }
 }
 
+@mixin makeDisplay($infix) {
+    @each $display in $display-value {
+        .d#{$infix}-#{$display} {
+            display: $display;
+        }
+    }
+}
+
 @each $breakpoint, $dimension in $grid-breakpoints {
     $maxWidth: map-get($container-max-widths, $breakpoint);
     $infix: if($breakpoint == 'xs', '', '-' + $breakpoint);
@@ -141,5 +150,7 @@ $gutters: (
         @include makeOffset($infix);
 
         @include makeGutters($infix);
+
+        @include makeDisplay($infix);
     }
 }

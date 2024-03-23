@@ -680,6 +680,30 @@ b {
   --grid-gutter-y: 72px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-none {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -861,6 +885,24 @@ b {
   }
   .gy-sm-6 {
     --grid-gutter-y: 72px;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+  .d-sm-grid {
+    display: grid;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+  .d-sm-inline {
+    display: inline;
+  }
+  .d-sm-none {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -1045,6 +1087,24 @@ b {
   .gy-md-6 {
     --grid-gutter-y: 72px;
   }
+  .d-md-flex {
+    display: flex;
+  }
+  .d-md-grid {
+    display: grid;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-inline-block {
+    display: inline-block;
+  }
+  .d-md-inline {
+    display: inline;
+  }
+  .d-md-none {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -1227,6 +1287,24 @@ b {
   }
   .gy-lg-6 {
     --grid-gutter-y: 72px;
+  }
+  .d-lg-flex {
+    display: flex;
+  }
+  .d-lg-grid {
+    display: grid;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+  .d-lg-inline {
+    display: inline;
+  }
+  .d-lg-none {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -1411,6 +1489,24 @@ b {
   .gy-xl-6 {
     --grid-gutter-y: 72px;
   }
+  .d-xl-flex {
+    display: flex;
+  }
+  .d-xl-grid {
+    display: grid;
+  }
+  .d-xl-block {
+    display: block;
+  }
+  .d-xl-inline-block {
+    display: inline-block;
+  }
+  .d-xl-inline {
+    display: inline;
+  }
+  .d-xl-none {
+    display: none;
+  }
 }
 @media (min-width: 1400px) {
   .container {
@@ -1593,6 +1689,24 @@ b {
   }
   .gy-xxl-6 {
     --grid-gutter-y: 72px;
+  }
+  .d-xxl-flex {
+    display: flex;
+  }
+  .d-xxl-grid {
+    display: grid;
+  }
+  .d-xxl-block {
+    display: block;
+  }
+  .d-xxl-inline-block {
+    display: inline-block;
+  }
+  .d-xxl-inline {
+    display: inline;
+  }
+  .d-xxl-none {
+    display: none;
   }
 }
 .header {
