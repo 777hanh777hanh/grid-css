@@ -129,7 +129,7 @@ $display-value: flex, grid, block, inline-block, inline, none;
 @mixin makeDisplay($infix) {
     @each $display in $display-value {
         .d#{$infix}-#{$display} {
-            display: $display;
+            display: $display !important;
         }
     }
 }
