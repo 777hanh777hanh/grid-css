@@ -2,6 +2,8 @@ const FILE_CSS_NAME = 'grid.css';
 const FILE_CSS_DESKTOP_NAME = 'grid-desktop.css';
 const FILE_CSS_MINIFY_NAME = 'grid.min.css';
 const FILE_CSS_MINIFY_DESKTOP_NAME = 'grid-desktop.min.css';
+const FILE_SASS_NAME = 'grid.scss';
+const FILE_SASS_DESKTOP_NAME = 'grid-desktop-first.scss';
 const CDN_LINK = 'https://cdn.jsdelivr.net/gh/777hanh777hanh/';
 const REPO_NAME = 'grid-css';
 
@@ -10,6 +12,8 @@ const urlResetCSS = {
     minified: CDN_LINK + REPO_NAME + '/assets/css/' + FILE_CSS_MINIFY_NAME,
     original: CDN_LINK + REPO_NAME + '/assets/css/' + FILE_CSS_NAME,
     downloaded: './assets/css/' + FILE_CSS_MINIFY_NAME,
+    sass: './assets/sass/' + FILE_SASS_NAME,
+    sass_D: './assets/sass/' + FILE_SASS_DESKTOP_NAME,
     minified_D: CDN_LINK + REPO_NAME + '/assets/css/' + FILE_CSS_MINIFY_DESKTOP_NAME,
     original_D: CDN_LINK + REPO_NAME + '/assets/css/' + FILE_CSS_DESKTOP_NAME,
     downloaded_D: './assets/css/' + FILE_CSS_MINIFY_DESKTOP_NAME,
@@ -50,6 +54,7 @@ const copyContent = async (content) => {
 const downloadFileBtns = document.querySelectorAll('.download_file');
 const copyMinifiedBtns = document.querySelectorAll('.copy_minified');
 const copyOriginalBtns = document.querySelectorAll('.copy_original');
+const copySassBtns = document.querySelectorAll('.copy_sass');
 
 downloadFileBtns.forEach((btn) => {
     const link = urlResetCSS.downloaded;
@@ -63,11 +68,16 @@ copyMinifiedBtns.forEach((btn) => {
     const link = urlResetCSS.minified;
     addAction(btn, () => copyContent(link));
 });
+copySassBtns.forEach((btn) => {
+    const link = urlResetCSS.sass;
+    addAction(btn, () => downloadFile(link, FILE_SASS_NAME));
+});
 
 // DesktopFirst Button
 const downloadFileBtnDs = document.querySelectorAll('.download_file_D');
 const copyMinifiedBtnDs = document.querySelectorAll('.copy_minified_D');
 const copyOriginalBtnDs = document.querySelectorAll('.copy_original_D');
+const copySassBtnDs = document.querySelectorAll('.copy_sass_D');
 
 downloadFileBtnDs.forEach((btn) => {
     const link = urlResetCSS.downloaded_D;
@@ -80,4 +90,8 @@ copyOriginalBtnDs.forEach((btn) => {
 copyMinifiedBtnDs.forEach((btn) => {
     const link = urlResetCSS.minified_D;
     addAction(btn, () => copyContent(link));
+});
+copySassBtnDs.forEach((btn) => {
+    const link = urlResetCSS.sass_D;
+    addAction(btn, () => downloadFile(link, FILE_SASS_DESKTOP_NAME));
 });
